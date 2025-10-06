@@ -1,0 +1,29 @@
+def add(first,second):
+	return(first+second)
+def sub(first,second):
+	return(first-second)
+def mul(first,second):
+	return(first*second)
+def div(first,second):
+	return(first/second)
+def power(first,second):
+	return(first**second)
+
+def calculator(first,op,second):
+	if op=="+":
+		 return add(first,second) 
+	elif op=="-":
+		return sub(first,second)
+	elif op=="*":
+		return mul(first,second)
+	elif op=="/":
+		return div(first,second)
+	elif op=="power":
+		return power(first,second)
+	else:
+		print("invalid")
+first=int(input("Enter first number:"))
+op=input("Enter operator:")
+second=int(input("Enter second number:"))
+result=calculator(first,op,second)
+print(first,"",op,"",second,"=",result)
