@@ -1,0 +1,11 @@
+def fib(n):
+	if n==0 or n==1:
+		return n
+	else:
+		sum=fib(n-1)+fib(n-2)
+		return sum
+n=int(input("Enter the number:"))
+print("Fibonacci numbers upto ",n," are :")
+for i in range(0,n):
+	result=fib(i)
+	print(result)
